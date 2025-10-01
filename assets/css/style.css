@@ -1,0 +1,109 @@
+h1{
+    text-align: center;
+    font-family: baskerville;
+    font-size:2rem;
+}
+#title{
+    font-family: baskerville;
+    font-size:2rem;
+
+}
+#navbarLeft{
+    justify-content: space-between;
+    
+}
+#carouselExampleAutoplaying{
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+
+footer{
+    background-color:orangered;
+    border-color:orangered;
+    border-top: 50px;
+    color: black;
+}
+#contact {
+    border: 2px solid #333;
+}
+h3{
+    text-align: center;
+    font-family: baskerville;
+    font-size:2rem;
+}
+hr{
+    border-top: 2px solid black;
+    margin: 1rem 0;
+}
+
+#button{
+    background-color: red;
+    color: black;
+    border:solid black 2px ;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 4 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+#button:hover {
+    background-color: black;
+    color: orangered;
+    border:solid orangered  2px ;
+}
+.btn{
+    background-color: black;
+    color: orangered;
+    border:solid black 2px ;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 4 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;}
+
+.btn:hover {
+    background-color: green;
+    color:orangered;
+    border: solid black  2px ;
+    transition-duration: 1s
+}
+
+
+
+.iframe{
+    border: 2px solid black;
+    border-radius: 12px;
+    max-width:100%;
+    height:80%;
+    
+}
+.insta{
+    border-radius: 20%;
+    border: 2px solid black;
+    padding: 2px;
+    background-color: black;
+    transition-duration: 0.4s;
+}
+.fb{
+    border-radius: 20%;
+    border: 2px solid black;
+    padding: 2px;
+    background-color: black;
+    transition-duration: 0.4s;
+}
+.x{
+    border-radius: 20%;
+    border: 2px solid black;
+    padding: 2px;
+    background-color:black;
+    transition-duration: 0.4s;
+}
