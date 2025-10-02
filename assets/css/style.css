@@ -1,11 +1,11 @@
 h1{
     text-align: center;
-    font-family: baskerville;
+    font-family: baskerville, serif;
     font-size:50px;
 }
 h2{
     text-align: center;
-    font-family: baskerville;
+    font-family: baskerville, serif;
     font-size:50px;
 }
 f
@@ -30,9 +30,9 @@ f
 footer{
     background-color:orangered;
     border-color:black;
-    border-top: 50px;
+    border-top: 50px solid black;
     color: black;
-    margin-top:30px;
+    margin-top:60px;
 }
 #contact {
     border: 2px solid #333;
@@ -41,7 +41,10 @@ h3{
     text-align: center;
     font-family: baskerville;
     font-size:50px;
+    margin-bottom: 50px;
+    
 }
+
 main{
     font-size:40px;
 }
@@ -54,15 +57,14 @@ hr{
     background-color: red;
     color: black;
     border:solid black 2px ;
-    padding: 10px 20px;
+    padding: 20px 40px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 4 16px;
-    margin: 4px 2px;
+    font-size: 16px;
+    margin: 50px 160px ;
     cursor: pointer;
     border-radius: 12px;
     transition-duration: 0.4s;
+    
 }
 #button:hover {
     background-color: black;
@@ -77,7 +79,7 @@ hr{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 4 16px;
+    font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
@@ -85,8 +87,8 @@ hr{
 
 .btn:hover {
     background-color: black;
-    color:hsl(39, 96%, 50%);
-    border: solid hsl(39, 96%, 50%)  2px ;
+    color: white;
+    border: solid black  2px ;
     transition-duration: 1s
 }
 
@@ -99,14 +101,14 @@ hr{
     max-height:100%;
     min-width:90%;
     min-height: 40%;
-    margin-left:
+    margin-left: 30px
     
 }
 .insta{
     border-radius: 20%;
     border: 2px solid rgb(243, 3, 227);
     padding: 2px;
-    background-color: ;
+    background-color: 
     transition-duration: 0.4s;
 }
 .fb{
@@ -129,14 +131,42 @@ hr{
     margin-bottom: 10px;
     border-color :orangered;
     border-width: 2px;
+    min-height:535px;
 }
 
+h3 > p{
+    align-items: en;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    /* Make all service cards the same height for consistency */
+     #deals .card {
+        min-height: 500px;
+    }
+}
+
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+    /* Make all service cards the same height for consistency */
+    #deals .card {
+        min-height: 500px;
+    }
+}
+
+/* xl devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1100px) {
+    /* make all service cards the same height for consistency */
+    #deals .card {
+        min-height: 550px;
+    }
+}
 
 /* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
     /* make all service cards the same height for consistency */
-    #contact .container section {
-        min-height: 195px;
+     #deals .card{
+        min-height: 530px;
     }
 }
 

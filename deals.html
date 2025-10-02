@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deals</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     
+    <!-- Bootstrap links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!--Css links--> 
+     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-  <link rel="stylesheet" href="assets/css/style.css">
+ 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <!-- Brand -->
-            <a class="navbar-brand" href="trial.html">
-                <img src="assets/images/logo.theburgershack.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
-                Smash stack
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.theburgershack.png" alt="Logo" width="40" height="40" class="d-inline-block align-top">
+                The Burger Shack
             </a>
             <!-- Toggler for collapse -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLeft"
@@ -27,12 +31,12 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+             <!--       <li class="nav-item">
                         <a class="nav-link" href="#">Menu Items</a>
-                    </li>
-                    <li class="nav-item">
+                    </li>-->  
+               <li class="nav-item">
                         <a class="nav-link" href="#">Deals/Students Deals</a>
-                    </li>
+                    </li> 
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Careers</a>
                     </li>
@@ -58,7 +62,7 @@
                     <h2 class="display-2">Deals</h2>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
-                    <div class="card">
+                    <div class="card text-center">
                         <img class="card-img-top" src="assets/images/mealDeals.theburgershack.png" alt="A image of a pizza, a burrito, loaded fries , chicken wings a chocolate milk shake and dips">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Meal deal for 1</h3>
@@ -157,13 +161,13 @@
                     <h3>Contact info</h3>
                     <hr>
                     <address>
-                        <strong><i class="fa-solid fa-location-dot"></i>The Burger Shack</strong><br>
+                        <strong><i class="fa-solid fa-location-pin"></i>  </i>The Burger Shack</strong><br>
                         Unit 6 <br>
                         Marina Market Dockland, Cork
                     </address>
                     
-                    <p><i class="fa-solid fa-phone"></i> 012 345 6789<br>
-                        <i class="fa-regular fa-paper-plane"></i> info@theburgershack.com
+                    <p><i class="fa-solid fa-square-phone"></i> 012 345 6789<br>
+                        <i class="fa-solid fa-envelope"></i> info@theburgershack.com
                     </p>
                     <!-- Social media links my(y margin top and bottom) -->
                     <div class="social-links my-4" id="socials">
@@ -189,7 +193,7 @@
                 <form action="submit.html" method="POST" id="form">
                     <h3 class="sub-heading-color">Send a Message</h3>
                     <hr>
-                    <form action="target-submit.html" method="POST">
+                    
                     <div class="mb-3">
                         <label for="firstName" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="firstName" name="firstName" required aria-describedby="firstNameHelp">
@@ -201,16 +205,29 @@
                         <input type="text" class="form-control" id="lastName" name="lastName" required aria-describedby="lastNameHelp">
                         <div id="lastNameHelp" class="form-text">Enter your last name.</div>
                     </div>
-
+                    
+                    
+                    <!-- Dropdown for action type -->
+                    <div>
+                        <label for="action">Choose subject:</label>
+                        <select id="action" name="action" required>
+                        <option value="">Select an action</option>
+                        <option value="booking">Booking</option>
+                        <option value="order">Order</option>
+                        <option value="other">Carriers</option>
+                        <option value="feedback">Feedback</option>
+                        
+                        </select>
+                    </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>
                         <textarea class="form-control" id="message" name="message" rows="4" required aria-describedby="messageHelp"></textarea>
-                        <div id="messageHelp" class="form-text">Share your feedback or inquiry.</div>
+                        <div id="messageText" class="form-text">Share your feedback or inquiry.</div>
                     </div>
                     <div class="mb-3">
                         <label for="date" class="form-label">Date</label>
-                        <input type="date" class="form-control" id="date" name="date" required aria-describedby="dateHelp">
-                        <div id="dateHelp" class="form-text">Select today’s date or another relevant date.</div>
+                        <input type="date" class="form-date" id="date" name="date" required aria-describedby="dateHelp">
+                        <div id="dateSelect" class="form-text">Select today’s date or another relevant date.</div>
                     </div>
 
                     <button type="submit" href="submit.html" class="btn" id="btn style=" background-color: #ff6347; color: white;>Submit</button>
