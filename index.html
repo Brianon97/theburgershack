@@ -38,9 +38,9 @@
                         <a class="nav-link" href="deals.html">Deals/Students Deals</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Careers</a>
+                        <a class="nav-link" href="#contact">Contact us</a>
                     </li>
-                    <li class="nav-item">
+                  <!--  <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact Information</a>
                     </li>
                     <li class="nav-item">
@@ -48,7 +48,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Shopping Cart </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -102,8 +102,8 @@
        
 <p>Whether you’re grabbing a quick meal, enjoying our student deals, or planning a party, we’ve got you covered with hot, tasty food that you won't forget.
 We pride ourselves on using fresh ingredients and delivering meals that hit the spot every time.</p>
-<p>Try or <strong>smash burgers</strong>, <strong>Italian style pizzas</strong> , with a <strong><em>Caramel malteaser milkshake</em></strong> or create your own!
-Don’t forget to check out our <strong>socials</strong> below for the latest offers, updates, and mouth-watering food pics!
+<p>Try or <strong>smash burgers</strong>, <strong>Italian style pizzas</strong> , with a <strong><em>a drink of your choice</em></strong> or create your own!
+Don’t forget to check out our <a href="#socials"><strong>socials</strong></p></a> below for the latest offers, updates, and mouth-watering food pics!
 </p>
 
 
@@ -111,9 +111,9 @@ Don’t forget to check out our <strong>socials</strong> below for the latest of
     
     
     
-    <footer id="contact" class="mt-auto">
-        <div class="container section">
-            <div class="row justify-content-between">
+    <footer id="contact">
+        <div class="container-section">
+            <div class="row justify-content-center">
                 <div class="col-12">
         </div>
                 <!-- Contact info -->
@@ -122,16 +122,16 @@ Don’t forget to check out our <strong>socials</strong> below for the latest of
                     <h3>Contact info</h3>
                     <hr>
                     <address>
-                        <strong><i class="fa-solid fa-location-dot"></i>The Burger Shack</strong><br>
+                        <strong><i class="fa-solid fa-location-pin"></i> </i>The Burger Shack</strong><br>
                         Unit 6 <br>
                         Marina Market Dockland, Cork
                     </address>
                     
-                    <p><i class="fa-solid fa-phone"></i> 012 345 6789<br>
-                        <i class="fa-regular fa-paper-plane"></i> info@theburgershack.com
+                    <p><i class="fa-solid fa-square-phone"></i> 012 345 6789<br>
+                        <i class="fa-solid fa-envelope"></i> <a href="mailto:someone@example.com">info@theburgershack.com</a>
                     </p>
                     <!-- Social media links my(y margin top and bottom) -->
-                    <div class="social-links my-4">
+                    <div class="social-links my-4" id="socials">
                         <a href="https://www.instagram.com" target="_blank"
                             aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><img class="insta" src="assets/images/insta.logo.jpg" alt="instagram logo" width="40" height="40" class="d-inline-block align-top"></a>
                         <a href="https://www.facebook.com" target="_blank"
@@ -141,10 +141,20 @@ Don’t forget to check out our <strong>socials</strong> below for the latest of
                     </div>
             </div>
             
+            <!-- Map -->          
+              
             <div class="col-12 col-md-6 col-xl-3">
-                <form>
+                    <h3>Find Us</h3>
+                    <hr>
+                <iframe class="iframe" src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2453.5!2d-8.450505958412183!3d51.89955700773919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTejNTMnNTguNCJOIDHCsDI3JzAxLjgiVw!5e0!3m2!1sen!2sie!4v1727690000000!5m2!1sen!2sie
+                    aria-label="Map showing The Burger Shack location at Marina Market, Cork">
+                </iframe>
+                </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <form action="submit.html" method="POST" id="form">
                     <h3 class="sub-heading-color">Send a Message</h3>
-                    <form action="/submit" method="POST">
+                    <hr>
+                    <form action="target-submit.html" method="POST">
                     <div class="mb-3">
                         <label for="firstName" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="firstName" name="firstName" required aria-describedby="firstNameHelp">
@@ -156,33 +166,36 @@ Don’t forget to check out our <strong>socials</strong> below for the latest of
                         <input type="text" class="form-control" id="lastName" name="lastName" required aria-describedby="lastNameHelp">
                         <div id="lastNameHelp" class="form-text">Enter your last name.</div>
                     </div>
-
+                    
+                    
+                    <!-- Dropdown for action type -->
+                    <div>
+                        <label for="action">Choose subject:</label>
+                        <select id="action" name="action" required>
+                        <option value="">Select an action</option>
+                        <option value="booking">Booking</option>
+                        <option value="order">Order</option>
+                        <option value="other">Carriers</option>
+                        <option value="feedback">Feedback</option>
+                        
+                        </select>
+                    </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>
                         <textarea class="form-control" id="message" name="message" rows="4" required aria-describedby="messageHelp"></textarea>
-                        <div id="messageHelp" class="form-text">Share your feedback or inquiry.</div>
+                        <div id="messageText" class="form-text">Share your feedback or inquiry.</div>
                     </div>
                     <div class="mb-3">
                         <label for="date" class="form-label">Date</label>
-                        <input type="date" class="form-control" id="date" name="date" required aria-describedby="dateHelp">
-                        <div id="dateHelp" class="form-text">Select today’s date or another relevant date.</div>
+                        <input type="date" class="form-date" id="date" name="date" required aria-describedby="dateHelp">
+                        <div id="dateSelect" class="form-text">Select today’s date or another relevant date.</div>
                     </div>
 
-                    <button type="submit" class="btn" style="background-color: #ff6347; color: white;">Submit</button>
+                    <button type="submit" href="submit.html" class="btn" id="btn style=" background-color: #ff6347; color: white;>Submit</button>
                 </form>
             </div>
                 
-                
-              
-            <div class="col-12 col-md-6 col-xl-3">
-                    <h3>Find Us</h3>
-
-                <iframe class="iframe" src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2453.5!2d-8.450505958412183!3d51.89955700773919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTejNTMnNTguNCJOIDHCsDI3JzAxLjgiVw!5e0!3m2!1sen!2sie!4v1727690000000!5m2!1sen!2sie
-                    
-                    aria-label="Map showing The Burger Shack location at Marina Market, Cork">
-                </iframe>
-                </div>
-            </div>
+      
                     
                     
             </div>
