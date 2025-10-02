@@ -100,7 +100,7 @@ hr{
     max-width:100%;
     max-height:100%;
     min-width:90%;
-    min-height: 60%;
+    min-height: 50%;
     margin-left: 30px
     
 }
@@ -160,6 +160,7 @@ h3 > p{
     #deals .card {
         min-height: 550px;
     }
+    .iframe {max-width: 60%;}
 }
 
 /* xxl devices (larger desktops, 1400px and up) */
