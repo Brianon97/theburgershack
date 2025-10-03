@@ -129,7 +129,7 @@
                         Marina Market Dockland, Cork
                     </address>
 
-                    <p><i class="fa-solid fa-square-phone"></i> 012 345 6789<br>
+                    <p><i class="fa-solid fa-square-phone"></i> 021 427 6789<br>
                         <i class="fa-solid fa-envelope"></i> <a
                             href="mailto:someone@example.com">info@theburgershack.com</a>
                     </p>
@@ -138,23 +138,23 @@
                         <a href="https://www.instagram.com" target="_blank"
                             aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><img class="insta"
                                 src="assets/images/insta.logo.jpg" alt="instagram logo" width="40" height="40"
-                                class="d-inline-block align-top"></a>
+                                ></a>
                         <a href="https://www.facebook.com" target="_blank"
                             aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener"><img class="fb"
                                 src="assets/images/facebook.logo.jpg" alt="facebook Logo" width="40" height="40"
-                                class="d-inline-block align-top"></a>
+                                ></a>
                         <a href="https://www.x.com" target="_blank" aria-label="Visit our X feed (opens in a new tab)"
                             rel="noopener"><img class="x" src="assets/images/X.logo.png" alt="X Logo" width="40"
-                                height="40" class="d-inline-block align-top"></a>
-                    </div>
-                </div>
+                                height="40"></a>
+            </div>
+        </div>
 
                 <!-- Map -->
 
                 <div class="col-12 col-md-6 col-xl-3">
                     <h3>Find Us</h3>
                     <hr>
-                    <iframe id="iframe"
+                    <iframe class="iframe"
                         src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2453.5!2d-8.450505958412183!3d51.89955700773919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTejNTMnNTguNCJOIDHCsDI3JzAxLjgiVw!5e0!3m2!1sen!2sie!4v1727690000000!5m2!1sen!2sie
                         aria-label="Map showing The Burger Shack location at Marina Market, Cork">
                     </iframe>
@@ -177,7 +177,7 @@
                                 aria-describedby="lastNameHelp">
                             <div id="lastNameHelp" class="form-text">Enter your last name.</div>
                         </div>
-
+                    </form>
 
                         <!-- Dropdown for action type -->
                         <div>
@@ -196,21 +196,27 @@
                             <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                             <div id="messageText" class="form-text">Share your feedback or inquiry.</div>
                         </div>
+                        <div class="col-md-6">
+                             <label for="date" class="form-label">Choose file</label>
+                            <input type='file' name='upload'>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
                         <div class="mb-3">
                             <label for="date" class="form-label">Date</label>
                             <input type="date" class="form-date" id="date" name="date" required>
                             <div id="dateSelect" class="form-text">Select today's date or another relevant date.</div>
-                        </div>
-
-                        <button type="submit" href="submit.html" class="btn"
-                            onclick="location.href='submit.html'">Submit</button>
-                    </form>
-                </div>
-
-
-
-
+                        </div>               
             </div>
+                        <button type="submit"  class="btn"
+                            onclick="location.href='submit.html'">Submit</button>
+                    
+            </div>
+
+
+
+
+            
         </div>
     </footer>
 
