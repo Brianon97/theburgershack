@@ -2,7 +2,9 @@
 
 <img width="1024" height="1024" alt="logo theburgershack" src="https://github.com/user-attachments/assets/57dcac0a-bfb1-4105-9b4c-cc0e4d47633c" />
 Image of website / amiresponsive
-Link to Live website
+<h2> Link to Live website </h2>
+
+https://brianon97.github.io/theburgershack/
 
 <img width="816" height="717" alt="Screenshot 2025-10-02 225805" src="https://github.com/user-attachments/assets/6676bdd3-c498-4c7d-8ddd-f7d48358b0f7" />
 
@@ -172,6 +174,7 @@ X: https://www.x.com
 Developer: [Brain O'Neill] (HTML, CSS, and Bootstrap implementation).
 
 Designer: [Brian O'Neill] (custom CSS styling and layout).
+
 
 
 
