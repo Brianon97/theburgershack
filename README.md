@@ -3,16 +3,19 @@
 <img width="1024" height="1024" alt="logo theburgershack" src="https://github.com/user-attachments/assets/57dcac0a-bfb1-4105-9b4c-cc0e4d47633c" />
 
 <h2>Table of Contents</h2>
-*[Website preview](pv)
-*[Link to live website](web)
-*[User Stories](#userstories)
-*[UX Design](#uxdesign)
-*[Features](#features)
-*[Deployment / Dependencies](#deployment)
-*[AI Implementation](#ai)
-*[Testing and Validation](#tv)
-*[References / External Links](#references)
-*[Credits](#credits)
+<ul>
+  <li><a href="#pv">Website Preview</a></li>
+  <li><a href="#web">Link to Live Website</a></li>
+  <li><a href="#userstories">User Stories</a></li>
+  <li><a href="#uxdesign">UX Design</a></li>
+  <li><a href="#features">Features</a></li>
+  <li><a href="#deployment">Deployment / Dependencies</a></li>
+  <li><a href="#ai">AI Implementation</a></li>
+  <li><a href="#tv">Testing and Validation</a></li>
+  <li><a href="#references">References / External Links</a></li>
+  <li><a href="#credits">Credits</a></li>
+</ul>
+
 
 <h2 id ="pv"> Website Preview</h2>
 
