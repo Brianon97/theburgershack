@@ -18,16 +18,16 @@ The Burger Shack Website is a responsive, user-friendly web application designed
 
 <h2>Table of Contents</h2>
 
-User Stories
-UX Design
-Features
-Deployment / Dependencies
-AI Implementation
-Testing and Validation
-References / External Links
-Credits
+*[User Stories](#userstories)
+*UX Design
+*Features
+*Deployment / Dependencies
+*AI Implementation
+*Testing and Validation
+*References / External Links
+*Credits
 
-<h2>User Stories</h2>
+<h2 id="userstories">User Stories</h2>
 
 As a customer, I want to view meal deals and student offers, so I can choose affordable dining options.
 As a potential employee, I want to access a careers form, so I can apply for jobs at The Burger Shack.
