@@ -19,23 +19,23 @@ The Burger Shack Website is a responsive, user-friendly web application designed
 <h2>Table of Contents</h2>
 
 *[User Stories](#userstories)
-*UX Design
-*Features
-*Deployment / Dependencies
-*AI Implementation
-*Testing and Validation
-*References / External Links
-*Credits
+*[UX Design](#uxdesign)
+*[Features](#features)
+*[Deployment / Dependencies](#deployment)
+*[AI Implementation](#ai)
+*[Testing and Validation](#tv)
+*[References / External Links](#references)
+*[Credits](#credits)
 
 <h2 id="userstories">User Stories</h2>
 
-As a customer, I want to view meal deals and student offers, so I can choose affordable dining options.
-As a potential employee, I want to access a careers form, so I can apply for jobs at The Burger Shack.
-As a visitor, I want to find the restaurant’s location and contact details, so I can visit or reach out easily.
-As a student, I want to see student-specific deals, so I can save money on meals.
-As a social media user, I want to access The Burger Shack’s social media pages, so I can stay updated on offers and promotions.
+*As a customer, I want to view meal deals and student offers, so I can choose affordable dining options.
+*As a potential employee, I want to access a careers form, so I can apply for jobs at The Burger Shack.
+*As a visitor, I want to find the restaurant’s location and contact details, so I can visit or reach out easily.
+*As a student, I want to see student-specific deals, so I can save money on meals.
+*As a social media user, I want to access The Burger Shack’s social media pages, so I can stay updated on offers and promotions.
 
-<h2>The UX design</h2>
+<h2 id="uxdesign">The UX design</h2>
 
 <h3>Wireframes: </h3>
 The layout includes a navbar, carousel for food images, and a footer with contact and form sections.
@@ -68,15 +68,15 @@ Responsive card heights ensure uniformity across devices (e.g., min-height: 500p
 <h3>Tools Used:</h3>
 HTML, CSS, and Bootstrap for structure and styling and balsamic for wireframes.
 
-<h2>Features</h2>
+<h2 id="features">Features</h2>
 
-Navigation Bar: A dark-themed, responsive navbar with links to Home, Deals/Student Deals, Careers, and Contact Us.
-Image Carousel: Displays six food items (e.g., smash burgers, loaded fries, Italian-style pizza) with autoplay and navigation controls.
-Deals Page: Lists meal deals for individuals, groups, and students, with prices (e.g., €10 for a single meal deal, €50 for a group bundle).
-Contact Form: Allows users to submit inquiries or job applications with fields for first name, last name, subject (e.g., booking, careers), message, and date.
-Social Media Integration: Links to Instagram, Facebook, and X with branded icons.
-Location Map: Embedded Google Maps iframe showing The Burger Shack’s location at Marina Market, Cork.
-Footer: Centralized contact info, including address, phone (021 427 6789), and email (info@theburgershack.com).
+*Navigation Bar: A dark-themed, responsive navbar with links to Home, Deals/Student Deals, Careers, and Contact Us.
+*Image Carousel: Displays six food items (e.g., smash burgers, loaded fries, Italian-style pizza) with autoplay and navigation controls.
+*Deals Page: Lists meal deals for individuals, groups, and students, with prices (e.g., €10 for a single meal deal, €50 for a group bundle).
+*Contact Form: Allows users to submit inquiries or job applications with fields for first name, last name, subject (e.g., booking, careers), message, and date.
+*Social Media Integration: Links to Instagram, Facebook, and X with branded icons.
+*Location Map: Embedded Google Maps iframe showing The Burger Shack’s location at Marina Market, Cork.
+*Footer: Centralized contact info, including address, phone (021 427 6789), and email (info@theburgershack.com).
 
 <h3>Future Features (Planned):</h3>
 
@@ -85,11 +85,54 @@ Shopping Cart for online ordering.
 
 <h2>Deployment / Dependencies</h2>
 
-<h3>Deployment:</h3>
+<h3 id="deployment">Deployment:</h3>
 
-Platform: The site is static and can be deployed with a link through GitHub Pages.
-Process: Manual deployment by uploading files to a hosting service (GitHub).
-Hosting: Static hosting with Github.
+
+
+This project was created with vs code. Within the terminal of vs code initiated a repo to link with github. From github  follow the steps below.
+
+Step 1 - Create a folder in your local directory/computer/storage.
+
+Create a folder on your device Eg theBurgerShack
+Return to vs code open the folder add your folders eg html assets/images/css then go to the terminal.
+
+Step 2 - Go to vs code terminal
+
+Initialize Git with -	git init
+Stage all files with       git add .
+Commit	git commit -m "Initial commit for The Burger Shack website"
+
+Step 3 - Go to Github
+
+Navigate to create a new repository.
+Name the repository : theburgershack
+Add description: “The Burger Shack website project”
+Select visibility: choose Public
+⚠️ Don’t add a README, .gitignore, or license (you already have local files).
+Click Create repository.
+
+On the next page, GitHub will show the commands to connect your local repo — keep that tab open that you can copy and paste into your vs code terminal.
+
+Step 4 - Return to vs code
+
+Rename branch	git branch -M main
+Add remote	git remote add origin https://github.com/brianon97/theburgershack.git
+Push to GitHub	git push -u origin main
+
+Step 5 - Return to github 
+
+Goto Settings → Pages
+Go to Deploy to Pages
+Under “Build and deployment”, set:
+Source: Deploy from a branch
+Branch: main
+Folder: / (root) (if your index.html is in the main folder)
+
+Click Save.
+
+Wait a few minutes, return to the code in the repository, click refresh and navigate the the right side of the page under deployment to see the website deployment link.
+
+
 
 <h3>Frontend:</h3>
 
@@ -102,7 +145,7 @@ Style.css for styling (e.g., orangered footer, Baskerville font, hover effects).
 Assets: Images for logo, food items, and social media icons stored in assets/images/.
 No Backend: The site is static, with form submissions redirecting to a placeholder submit.html.
 
-<h2>AI Implementation</h2>
+<h2 id="ai">AI Implementation</h2>
 
 No AI is integrated into the website, as it focuses on static content and user interaction.
 
@@ -111,7 +154,7 @@ No AI is integrated into the website, as it focuses on static content and user i
 Chatbot: Integrate to answer questions about menu items or deals.
 Recommendation System: Use AI to suggest meal deals based on user preferences (requires backend integration).
 
-<h2>Testing and Validation</h2>
+<h2 id="tv">Testing and Validation</h2>
 
 
 <h3>Unit Testing:</h3>
@@ -124,7 +167,7 @@ Recommendation System: Use AI to suggest meal deals based on user preferences (r
 Tested HTML and CSS for syntax errors using W3C validators.
 Verified form validation (e.g., required fields for first name, last name, and date).
 
-<h3>Perforance testing:</h3>
+<h3>Performance testing:</h3>
 Tested performance, accessability , best bractices and seo with Chrome Dev tool PageSpeed Insights.
 
 <img width="1908" height="795" alt="Screenshot 2025-10-03 124126" src="https://github.com/user-attachments/assets/3567a5c0-96da-4c3b-b7de-3ffaf11939f0" />
@@ -157,7 +200,7 @@ Verified consistent card heights on the Deals page across screen sizes.
 Placeholder submit.html for form submission is not implemented.
 I frames class showign error for google map(if correct then shows the wrong location)
 
-<h2>References / External Links</h2>
+<h2 id ="references">References / External Links</h2>
 
 Bootstrap Documentation: https://getbootstrap.com/docs/5.3/ for navbar, carousel, and card components.
 Font Awesome: https://fontawesome.com/ for icons.
@@ -169,7 +212,7 @@ Instagram: https://www.instagram.com
 Facebook: https://www.facebook.com
 X: https://www.x.com
 
-<h2>Credits</h2>
+<h2 id="credits">Credits</h2>
 
 Developer: [Brain O'Neill] (HTML, CSS, and Bootstrap implementation).
 
