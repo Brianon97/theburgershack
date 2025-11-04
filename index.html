@@ -41,7 +41,7 @@
                         <a class="nav-link" href="deals.html">Deals/Students Deals</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#form">Careers</a>
+                        <a class="nav-link" href="#contactForm">Careers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact Us</a>
@@ -157,6 +157,7 @@
                         aria-label="Map showing The Burger Shack location at Marina Market, Cork">
                     </iframe>
                 </div>
+                <!-- ==== FORM COLUMN ==== -->
                 <div class="col-12 col-md-6 col-xl-3">
                     <form id="contactForm" novalidate>
                         <h3 class="message">Send a Message</h3>
@@ -200,11 +201,22 @@
                         <button type="submit" class="btn btn-primary w-100">Submit</button>
                     </form>
 
-                    <!-- Success Message (hidden by default) -->
-                    <div id="successMessage" class="alert bg-warning mt-3" role="alert" style="display: none;">
-    <strong>Message Sent!</strong> Thank you — we'll get back to you soon.
-    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
+                    <!-- YELLOW WARNING SUCCESS MESSAGE -->
+                    <div id="successMessage" class="alert alert-warning mt-3 alert-dismissible fade show" role="alert"
+                        style="display:none;">
+                        <strong>Message Sent!</strong> Thank you — we'll get back to you soon.
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <!-- LIST OF SAVED SUBMISSIONS (optional) -->
+                    <div id="submissionsList" class="mt-4"></div>
+                </div>
+                <!-- Saved Submissions Display -->
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div id="submissionsList" class="mt-4"></div>
+                    <!-- Optional: Add clear button -->
+                    <!-- <button onclick="clearSubmissions()" class="btn btn-sm btn-outline-danger mt-2">Clear All</button> -->
                 </div>
 
 
@@ -222,7 +234,7 @@
     <!-- Shopping Cart JS -->
     <script src="assets/js/shopping-cart.js"></script>
     <!-- Form Handling JS -->
-<script src="assets/js/form.js"></script>
+    <script src="assets/js/form.js"></script>
 </body>
 
 

@@ -1,0 +1,25 @@
+{
+  "name": "burger-shack",
+  "version": "1.0.0",
+  "description": "The Burger Shack contact form with JSON storage",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brianon97/theburgershack.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Brianon97/theburgershack/issues"
+  },
+  "homepage": "https://github.com/Brianon97/theburgershack#readme"
+}
