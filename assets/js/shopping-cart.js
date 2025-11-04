@@ -179,3 +179,4 @@ function showToast(message, isSuccess = true) {
     // Expose for inline onclick
     window.removeFromCart = removeFromCart;
 });
+
